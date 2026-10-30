@@ -4,7 +4,7 @@
 class Player
 {
     public:
-        Vector2 position = {400,240};
+        Vector2 position = {400,240}; //
         static constexpr float Radius = 30.0f;
 
         void Update();

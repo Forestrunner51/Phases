@@ -4,10 +4,12 @@
 class Enemy
 {
     public:
-        Vector2 position = {600,150};
+        Vector2 EnemyPosition = {600,150};
+        bool present = false;
 
         void Load();
         void Unload();
+        void Update();
         void Draw() const;
     private:
         Texture2D texture = {};

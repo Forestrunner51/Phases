@@ -11,7 +11,14 @@ void Enemy::Unload()
     UnloadTexture(texture);
 }
 
+void Enemy::Update()
+{
+if ((present = false)){
+    EnemyPosition.x += 5.0f;
+}
+}
+
 void Enemy::Draw() const
 {
-    DrawTexxtureV(texture, position, WHITE);
+    DrawTextureV(texture, EnemyPosition, WHITE);
 }
