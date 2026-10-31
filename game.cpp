@@ -8,6 +8,7 @@ void Game::Run()
 
     while (!WindowShouldClose())
     {
+
         Update(GetFrameTime());
         Draw();
 
@@ -67,6 +68,7 @@ void Game::Draw()
     }
 
     enemy.Draw();
+    enemy.Update();
     player.Draw();
 
     EndDrawing();
