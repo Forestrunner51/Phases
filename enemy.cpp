@@ -46,5 +46,6 @@ void Enemy::Update()
 
 void Enemy::Draw() const
 {
+    DrawRectangleV(EnemyPosition, {10, 10}, GREEN);
     DrawTextureV(texture, EnemyPosition, WHITE);
 }

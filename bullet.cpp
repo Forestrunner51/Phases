@@ -1,5 +1,6 @@
 #include "bullet.h"
 #include <math.h>
+#include <raylib.h>
 
 void Bullet::Update()
 {
@@ -17,5 +18,6 @@ void Bullet::Update()
 
 void Bullet::Draw() const
 {
+    DrawCircleV(position, 6.0f, BLUE);
     if (active) DrawCircleV(position, 5.0f, RED);
 }

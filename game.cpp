@@ -38,6 +38,8 @@ void Game::Update(float dt)
         fireCooldown = FireDelay;
         Shoot();
     }
+
+    //collision = CheckCollisionCircleRec();
     player.Update();
 }
 

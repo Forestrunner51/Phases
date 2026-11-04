@@ -18,6 +18,8 @@ class Game
         Bullet bullets[MaxBullets];
         float fireCooldown = 0.0f;
 
+        bool collision = false;
+
         void Init();
         void Update(float dt);
         void Draw();
