@@ -43,6 +43,10 @@ void Enemy::Update()
 //     EnemyPosition.x
 // }
 
+void Enemy::EShoot() const
+{
+
+}
 
 void Enemy::Draw() const
 {

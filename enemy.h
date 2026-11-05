@@ -12,6 +12,7 @@ class Enemy
         void Load();
         void Unload();
         void Update();
+        void EShoot();
         void Draw() const;
     private:
         Texture2D texture = {};

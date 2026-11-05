@@ -8,7 +8,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 # raylib installed via Homebrew (brew install raylib)
 find_package(raylib REQUIRED)
 
-add_executable(pong main.cpp game.cpp player.cpp bullet.cpp enemy.cpp)
+add_executable(pong main.cpp game.cpp player.cpp bullet.cpp enemy.cpp enemyBullet.cpp)
 target_link_libraries(pong PRIVATE raylib)
 
 if(APPLE)

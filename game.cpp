@@ -28,10 +28,16 @@ void Game::Init()
 
 void Game::Update(float dt)
 {
+
     for (int i = 0; i < MaxBullets; i++)
         {
+            Ebullets[i].Update();
             bullets[i].Update();
+            if (CheckCollisionCircles(player.position,Player::Radius, Ebullets[i].Eposition,5.0f)){
+
+            }
         }
+
     fireCooldown -= dt;
     if (IsMouseButtonDown(MOUSE_LEFT_BUTTON) && fireCooldown<= 0.0f)
     {
@@ -39,7 +45,8 @@ void Game::Update(float dt)
         Shoot();
     }
 
-    //collision = CheckCollisionCircleRec();
+
+    collision = CheckCollisionCircleRec();
     player.Update();
 }
 

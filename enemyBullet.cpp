@@ -15,6 +15,7 @@ void EnemyBullet::Update()
     }
 }
 
+
 void EnemyBullet::Draw() const
 {
     if (active) DrawCircleV(Eposition, 5.0f, RED);

@@ -2,6 +2,7 @@
 #include "raylib.h"
 #include "player.h"
 #include "bullet.h"
+#include "enemyBullet.h"
 #include "enemy.h"
 
 class Game
@@ -16,6 +17,7 @@ class Game
         Player player;
         Enemy enemy;
         Bullet bullets[MaxBullets];
+        EnemyBullet Ebullets[MaxBullets];
         float fireCooldown = 0.0f;
 
         bool collision = false;
